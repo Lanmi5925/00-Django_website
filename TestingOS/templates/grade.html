@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>您的成绩</title>
+</head>
+<body>
+    {% if grade >= 60  %}
+    <p><h1> 恭喜您！ </h1></p>
+    <p><h1>您的成绩为：{{ grade }}分</h1></p>
+    {% else %}
+    <p><h1> 很遗憾！ </h1></p>
+    <p><h1>您的成绩为：{{ grade }}分，请继续加油！</h1></p>
+    {% endif %}
+</body>
+</html>
